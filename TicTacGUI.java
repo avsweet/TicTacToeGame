@@ -103,8 +103,8 @@ public class TicTacGUI extends JFrame{
 		
 		private void hasWinner(){
 			if (board[0][0].getText().equals(currentPlayer) && board [1][0].getText().equals(currentPlayer) && board[2][0].getText().equals(currentPlayer)){
-					JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
-					hasWinner = true;
+				JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
+				hasWinner = true;
 			}
 			else if (board [0][1].getText().equals(currentPlayer) && board [1][1].getText().equals(currentPlayer) && board[2][1].getText().equals(currentPlayer)){
 			JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
@@ -114,8 +114,30 @@ public class TicTacGUI extends JFrame{
 		    JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
 		    hasWinner = true;
 			}
+			   if(board[0][0].getText().equals(currentPlayer) && board [0][1].getText().equals(currentPlayer) && board[0][2].getText().equals(currentPlayer)){
+				 JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
+				    hasWinner = true;
+			}
+			else if (board [1][0].getText().equals(currentPlayer) && board [1][1].getText().equals(currentPlayer) && board[1][2].getText().equals(currentPlayer)){
+				JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
+				hasWinner = true;
+			}
+			else if (board [2][0].getText().equals(currentPlayer) && board [2][1].getText().equals(currentPlayer) && board[2][2].getText().equals(currentPlayer)){
+				JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
+				hasWinner = true;
+			}
+			    if (board [0][0].getText().equals(currentPlayer) && board [1][1].getText().equals(currentPlayer) && board[2][2].getText().equals(currentPlayer)){
+				JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
+				hasWinner = true;
+			}
+			else if (board [2][0].getText().equals(currentPlayer) && board [1][1].getText().equals(currentPlayer) && board[0][2].getText().equals(currentPlayer)){
+				JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
+				hasWinner = true;
+			}
 			if (hasWinner) {
-			    JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
+			    JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won the game. Quitting game");
+			    System.exit(0);
+			    
 			}
 		}
 }
