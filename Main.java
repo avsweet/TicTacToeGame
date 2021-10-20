@@ -1,4 +1,4 @@
-package cen4010.pa2;
+package cen4010.pa2.Untitled;
 
 import javax.swing.SwingUtilities;
 

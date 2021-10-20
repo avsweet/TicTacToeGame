@@ -1,4 +1,4 @@
-package cen4010.pa2;
+package cen4010.pa2.Untitled;
 
 import java.awt.Container;
 import java.awt.Font;
@@ -113,6 +113,9 @@ public class TicTacGUI extends JFrame{
 			else if (board [0] [2].getText().equals(currentPlayer) && board [1][2].getText().equals(currentPlayer) && board[2][2].getText().equals(currentPlayer)){
 		    JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
 		    hasWinner = true;
+			}
+			if (hasWinner) {
+			    JOptionPane.showMessageDialog(null, "Player " + currentPlayer + " has won");
 			}
 		}
 }
