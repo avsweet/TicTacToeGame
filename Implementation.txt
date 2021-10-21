@@ -1,0 +1,13 @@
+Tic Tac Toe PA2 Version 1
+
+Features: 
+The features implemented consist of a 3 x 3 grid. Two players are able to play against each other. I implemented a menu bar ,so users are able to generate a new game at any time or 
+quit the game at any time. Once a player has won, the game will announce the winner and automatically quit. The first player will always be "x" and the second player will always be "o".
+
+Design quality:
+
+The design of the java files are broken up into functions. Initialize Menu Bar function creates a menu bar displayed in the left corner as File. When cursor selects File, New game or quit game appear as options.This feature allows users to quit or start a new game at any time. ResetBoard function resets the board and initializeBoard initializes the board when users select a button on the grid. I changed the font of the "x" and "o" commands to be sans serif font and bold. I thought it would make the functions stand out more. TogglePlayer function makes sure the x and o variables constantly switch off for each player. The hasWinner function stores the logic for the tic tac toe game. It can compute if a winner wins diagonally, horizontally and vertically. I created an if statement to consistently state who is the winner of the game and to quit the game after the game is over. The main function calls the class TicTacGUI in a runnable 
+
+Programming style: 
+
+The object oriented language selected is Java with Swing for the user interface. I thought it would be the easiest way to make an interactive tic tac toe game. I also use JUnit for the testing framework of the application. The programming style is broken up into two classes called TicTacGUI and Main. I broke up the TicTacGUI class into seven functions. I used Swing for the JButton, JFrame, JMenu/JMenuBar, JMenu items and JOptionPane.
